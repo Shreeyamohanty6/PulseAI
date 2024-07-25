@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="row my-3">
+  <div class="col-md-6 mx-auto">
+    <h3 class="text-center">Sign IN</h3>
+      {% for m in messages%}
+         <p class={{m.tags}}>{{m}}</p>
+      {% endfor %}
+    <form action="{% url "signin" %}" method="post">
+      {% csrf_token %}
+        <input type="text" class="form-control rounded-0 mb-3" name="u_name" placeholder="User Name" required>
+        <input type="password" class="form-control rounded-0 mb-3" name="pass" placeholder="Password" required>
+        <input type="submit" class="btn btn-dark w-100 rounded-0 mt-2" value="login">
+    </form>
+  </div>
+</div>
+
+{% endblock content %}
