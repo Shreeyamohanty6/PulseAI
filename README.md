@@ -48,34 +48,43 @@ Refer to this [guide](https://www.freecodecamp.org/news/how-to-setup-virtual-env
 ### Starting a New Project
 ```bash
 django-admin startproject projectname
+```
 
 ### Creating a New App
 ```bash
 python manage.py startapp appname
+```
 
 ### Building the Project
 ```bash
 python manage.py -r requirements.txt
+```
 
 ### Running the Server
 ```bash
 python manage.py runserver
+```
 
-###Viewing Dependencies
+### Viewing Dependencies
 ```bash
 pip freeze
+```
 
-###Making Migrations
+### Making Migrations
 ```bash
 python manage.py makemigrations
 python manage.py migrate
+```
 
-###Creating a Superuser for Admin Registration
+### Creating a Superuser for Admin Registration
 ```bash
 python manage.py createsuperuser
 Enter email:
 Enter password:
 Re-enter password:
+<<<<<<< HEAD
+```
+=======
 =======
 PulseAI is a hospital management system where the patient registers himself and books a appointment of the doctor and additionally he can post blogs of his own and can comment on other's blogs. Here Doctor(Admin) can track the patient details and can change the status of appointment of the patient 
 , Basically there are two users 1.*Patient(User),2.Doctor(Admin)* 
@@ -194,3 +203,4 @@ To make admin registration
   re-enter password:
 
 
+>>>>>>> a2983fca314b8cc7eca66905888731598ff8ca93
