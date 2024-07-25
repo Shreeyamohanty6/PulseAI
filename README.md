@@ -1,5 +1,82 @@
 # PulseAI
+PulseAI is a seamless platform designed for patients and doctors to interact effortlessly. This hospital management system allows patients to register, book appointments, and engage in blog activities, while doctors can manage patient details and appointment statuses. The system supports two user roles: **Patient (User)** and **Doctor (Admin)**.
 
+## Roles and Responsibilities
+
+### Admin (Doctor)
+- **Login and Dashboard Access:** Doctors log in to access their dedicated admin dashboard.
+- **Appointment Management:** Doctors can oversee and update patient appointments.
+- **Blog Management:** Doctors can create, publish, and manage blog posts.
+- **Patient Interaction:** Doctors can review patient test results, prescribe medications, and manage visit records using an inline stack.
+
+### User (Patient)
+- **Registration and Login:** Patients can register and log in to the platform.
+- **Blog Interaction:** Patients can read, comment on blogs, and post their own blogs.
+- **Heart Disease Test:** Patients can fill out a form for heart disease risk assessment.
+- **AI-Based Prediction:** An AI model predicts the patient's heart disease risk.
+- **Appointment Scheduling:** Patients can view their test results and schedule appointments based on the predictions.
+
+## Features
+
+### Admin (Doctor)
+- Access to an admin dashboard after logging in.
+- Management of appointments and patient interactions.
+- Publishing and management of blog posts.
+- Review and prescription based on patient test results.
+- Inline stack for managing patient visit records.
+
+### User (Patient)
+- Registration and login capabilities.
+- Ability to read, comment, and post blogs.
+- Heart disease test form submission.
+- AI model for heart disease risk prediction.
+- Viewing test results and scheduling appointments.
+
+## Tech Stack
+
+- **Frontend:** HTML, CSS, Bootstrap
+- **Server:** SQLite (`db.sqlite3`)
+- **Backend:** Django
+
+## Running Tests
+
+To run tests, follow these steps:
+
+### Setting Up a Virtual Environment
+Refer to this [guide](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/) to set up a virtual environment.
+
+### Starting a New Project
+```bash
+django-admin startproject projectname
+
+### Creating a New App
+```bash
+python manage.py startapp appname
+
+### Building the Project
+```bash
+python manage.py -r requirements.txt
+
+### Running the Server
+```bash
+python manage.py runserver
+
+###Viewing Dependencies
+```bash
+pip freeze
+
+###Making Migrations
+```bash
+python manage.py makemigrations
+python manage.py migrate
+
+###Creating a Superuser for Admin Registration
+```bash
+python manage.py createsuperuser
+Enter email:
+Enter password:
+Re-enter password:
+=======
 PulseAI is a hospital management system where the patient registers himself and books a appointment of the doctor and additionally he can post blogs of his own and can comment on other's blogs. Here Doctor(Admin) can track the patient details and can change the status of appointment of the patient 
 , Basically there are two users 1.*Patient(User),2.Doctor(Admin)* 
 
@@ -75,47 +152,45 @@ Doctor uses inline stack for managing patient visit records.
 To run tests, run the following command
 
 How to CreateVirualEnvironment(Refer to the Below Link)
-bash
+```bash
 https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/
 
 
 How to StartProject 
-bash
-  django-admin startproject projectname
+```bash
+ django-admin startproject projectname
 
 How to CreateApp
-bash
-  python manage.py startapp appname
+```bash
+ python manage.py startapp appname
 
 
 Build Command 
-bash
+```bash
   python manage.py -r requirements.txt
 
 
 Run Command
-bash
+```bash
   python manage.py runserver
 
 
 To see the dependencies
-bash
+```bash
   pip freeze
 
 
 To make migrations
-bash
+```bash
   python manage.py makemigrations
   python manage.py migrate
 
 
 To make admin registration
-bash
+```bash
   python manage.py createsuperuser
   enter email:
   enter password:
   re-enter password:
 
 
-A Small demo of the project:
-https://github.com/HIITSMANU/pulseAI/assets/132491372/0db55f44-63a6-4e51-a6a9-b42f85857e28
