@@ -49,31 +49,38 @@ Refer to this [guide](https://www.freecodecamp.org/news/how-to-setup-virtual-env
 ### Starting a New Project
 ```bash
 django-admin startproject projectname
+```
 
 ### Creating a New App
 ```bash
 python manage.py startapp appname
+```
 
 ### Building the Project
 ```bash
 python manage.py -r requirements.txt
+```
 
 ### Running the Server
 ```bash
 python manage.py runserver
+```
 
-###Viewing Dependencies
+### Viewing Dependencies
 ```bash
 pip freeze
+```
 
-###Making Migrations
+### Making Migrations
 ```bash
 python manage.py makemigrations
 python manage.py migrate
+```
 
-###Creating a Superuser for Admin Registration
+### Creating a Superuser for Admin Registration
 ```bash
 python manage.py createsuperuser
 Enter email:
 Enter password:
 Re-enter password:
+```
