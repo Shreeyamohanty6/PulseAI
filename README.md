@@ -1,4 +1,4 @@
-PulseAI
+PulseAI 
 PulseAI is a seamless platform designed for patients and doctors to interact effortlessly. This hospital management system allows patients to register, book appointments, and engage in blog activities, while doctors can manage patient details and appointment statuses. The system supports two user roles: Patient (User) and Doctor (Admin).
 
 Roles and Responsibilities
@@ -37,18 +37,22 @@ Setting Up a Virtual Environment
 Refer to this guide to set up a virtual environment.
 
 Starting a New Project
+
 bash
 Copy code
 django-admin startproject projectname
 Creating a New App
+
 bash
 Copy code
 python manage.py startapp appname
 Building the Project
+
 bash
 Copy code
 python manage.py -r requirements.txt
 Running the Server
+
 bash
 Copy code
 python manage.py runserver
@@ -57,11 +61,13 @@ bash
 Copy code
 pip freeze
 Making Migrations
+
 bash
 Copy code
 python manage.py makemigrations
 python manage.py migrate
 Creating a Superuser for Admin Registration
+
 bash
 Copy code
 python manage.py createsuperuser
